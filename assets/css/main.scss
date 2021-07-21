@@ -1,0 +1,358 @@
+@import "./colors.scss";
+@import "./size.scss";
+
+body {
+  margin: 0%;
+}
+
+.face-svg {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.hero {
+  // background-color: white;
+  padding-top: 60px;
+  position: relative;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.headings {
+  position: absolute;
+  inset: 0px;
+  margin: auto;
+  height: fit-content;
+  padding: 24px;
+}
+
+.title {
+  //styleName: Desktop / H0;
+  font-family: Roboto;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 56px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+
+.sub-title {
+  //styleName: Desktop/Body;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+
+.container {
+  background-color: $light-blue;
+  background-image: url("/assets/images/background.svg");
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 10px;
+}
+
+.card {
+  /* Card */
+
+  /* Auto Layout */
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 12px;
+
+  position: static;
+  width: 231px;
+  height: 100px;
+  left: 242px;
+  top: 0px;
+
+  background: #ffffff;
+  /* Shadow */
+
+  box-shadow: 0px 0px 16px rgba(37, 40, 43, 0.1);
+  border-radius: 4px;
+
+  /* Inside Auto Layout */
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  margin: 0px 12px;
+
+  margin: 12px;
+}
+
+.image {
+  /* Image */
+
+  position: static;
+  width: 60px;
+  height: 60px;
+  left: 0px;
+  top: 0px;
+
+  background: url(image.png);
+  border-radius: 2px;
+
+  /* Inside Auto Layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin-right: 12px;
+}
+
+.card-title {
+  position: static;
+  width: 97px;
+  // height: 24px;
+  left: 0px;
+  top: 0px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height, or 150% */
+
+  /* Gray / Gray 900 */
+
+  color: #25282b;
+
+  /* Inside Auto Layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 4px 0px;
+}
+
+.card-status {
+  position: static;
+  width: 62px;
+  height: 24px;
+  left: 18px;
+  top: 0px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 24px;
+  /* identical to box height, or 200% */
+
+  /* Gray / Gray 900 */
+
+  color: #25282b;
+
+  /* Inside Auto Layout */
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  margin: 0px 8px;
+}
+
+.status-Alive {
+  position: relative;
+  width: 10px;
+  height: 10px;
+  left: 0px;
+  top: 7px;
+  border-radius: 100px;
+
+  background: $alive;
+
+  /* Inside Auto Layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 0px 8px;
+}
+
+.status-Dead {
+  position: relative;
+  width: 10px;
+  height: 10px;
+  left: 0px;
+  top: 7px;
+  border-radius: 100px;
+
+  background: $dead;
+
+  /* Inside Auto Layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 0px 8px;
+}
+
+.status-unknown {
+  position: relative;
+  width: 10px;
+  height: 10px;
+  left: 0px;
+  top: 7px;
+  border-radius: 100px;
+
+  background: $unknown;
+
+  /* Inside Auto Layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 0px 8px;
+}
+
+.page-num {
+  // position: static;
+  width: 51px;
+  height: 24px;
+  left: 99px;
+  top: 4px;
+
+  padding-right: 20px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height, or 150% */
+
+  color: #25282b;
+}
+
+.button {
+  position: static;
+  width: 32px;
+  height: 32px;
+  left: 48px;
+  top: 0px;
+
+  background: #ffffff;
+  border: 1px solid #dfe3e8;
+  box-sizing: border-box;
+  border-radius: 4px;
+
+  /* Inside Auto Layout */
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  margin-right: 16px;
+
+  color: #52565c;
+}
+
+.pages-container {
+  padding: 30px;
+  padding-left: 60px;
+  display: flex;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+@media screen and (max-width: $mobile) {
+  .title {
+    //styleName: Mobile/H1;
+    font-family: Roboto;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 36px;
+    letter-spacing: 0em;
+    text-align: center;
+  }
+
+  .sub-title {
+    //styleName: Desktop/Body;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: center;
+  }
+
+  .card {
+    /* Card */
+
+    /* Auto Layout */
+
+    display: flex;
+    flex-direction: row;
+    padding: 12px;
+
+    position: static;
+    width: 312px;
+    height: 84px;
+    left: 0px;
+    top: 0px;
+
+    background: #ffffff;
+    /* Shadow */
+
+    box-shadow: 0px 0px 16px rgba(37, 40, 43, 0.1);
+    border-radius: 4px;
+
+    /* Inside Auto Layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 12px 0px;
+  }
+}

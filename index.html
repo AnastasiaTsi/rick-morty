@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>RM</title>
+    <link rel="stylesheet" type="text/css" href="/assets/css/main.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <img src="assets/images/face.svg" alt="face-svg" class="face-svg" />
+
+    <div class="hero">
+      <div class="headings">
+        <h1 class="title">Is this the first part of some magic trick?</h1>
+        <h2 class="sub-title">
+          “Uh, here's something that's never happened before: I'm a pickle.”
+        </h2>
+      </div>
+
+      <img src="assets/images/hero.svg" alt="hero-svg" class="hero-svg" />
+    </div>
+
+    <div class="container">
+      <div
+        id="content"
+        style="
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-around;
+          padding-right: 10%;
+          padding-left: 10%;
+          padding-top: 50px;
+        "
+      ></div>
+
+      <div class="pages-container">
+        <button class="button" onclick="getCharacters('back')"><</button>
+        <button class="button" onclick="getCharacters('next')">></button>
+        <div id="pages" class="page-num"></div>
+      </div>
+    </div>
+
+    <script type="text/javascript"></script>
+    <script type="text/javascript" src="/assets/javascript/api.js">
+      // document.getElementById("demo").innerHTML=getHighestCacheMan();
+    </script>
+    <script type="text/javascript" src="/assets/javascript/modal.js"></script>
+  </body>
+</html>
